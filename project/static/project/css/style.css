@@ -1,0 +1,21 @@
+body{
+    text-align :center;  
+    margin: auto;
+}
+
+.card{
+    margin : 30px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+#concert{
+    margin: 40px;
+    width:40% ;
+}
+
+h3{
+    text-align: left;
+    margin : 30px;
+}

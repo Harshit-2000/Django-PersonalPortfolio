@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+
+{% load static %}
+
+{% block title %} Portfolio {% endblock %}
+{% block content%}
+
+<img id="concert" src="{% static 'project\concert.jpg' %}" alt="Concert Image" width='50%'>
+<h2>Hey There!</h2>
+<p>This is my bloging site created using Django, HTML, CSS</p>
+
+<hr>
+<h3>Projects</h3>
+
+{% for project in projects %}
+
+<div class="card" style="width: 18rem;">
+    <img src="{{project.image.url}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{project.title}}</h5>
+      <p class="card-text">{{project.desc}}</p>
+      <a class="btn btn-primary" >Read More</a>
+    </div>
+</div>
+
+{% endfor %}
+
+{% endblock %}
